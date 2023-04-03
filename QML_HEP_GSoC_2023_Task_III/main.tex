@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[english]{babel}
+
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Quantum Machine Learning}
+\author{Hrishit Tambi}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+I first got introduced to the world of Quantum Computing during my course of Quantum Mechanics-1, the professor talked about the ongoing research in the field and how one can leverage the unique features of quantum computing, such as superposition, entanglement, and interference, to speed up computation. 
+Inspired by the ongoing research in the field of quantum cryptography, I had later worked on a project where we explored the use QKD protocol to enchance security in UAV communication systems.
+
+In the following sections, I talk about my understanding of quantum machine learning, my favourite algorithms and what i find the most exciting about this field.
+
+\section{Quantum Machine Learning}
+
+\subsection{How i understand it!}
+
+Quantum machine learning (QML) combines the principles of quantum mechanics and machine learning to process and analyze data. While classical computers use bits, which are either ones or zeros, to store and manipulate information, quantum computers use qubits, which can be in a superposition of both one and zero states simultaneously. This allows for faster processing of data and solving complex problems that would take classical computers a very long time to solve. Qubits can also be entangled, which means that the state of one qubit can affect the state of another qubit in a predictable way.
+
+By leveraging these unique properties of qubits, QML algorithms can find patterns and relationships in data that may be difficult for classical ML algorithms to identify. QML has the potential to revolutionize various fields such as finance, medicine, and artificial intelligence.
+
+\subsection{What excites me the most!}
+
+By applying quantum principles and techniques to ML problems, we can discover new ways of representing, manipulating, and analyzing data that may inspire new developments in classical ML. For example, kernel methods, which are widely used in classical ML for nonlinear feature mapping and similarity measurement, have been generalized to quantum settings using quantum circuits[1]. Similarly, generative adversarial networks (GANs), which are popular models for generating realistic data using deep neural networks, have been extended to quantum settings using VQCs[2]. 
+
+\section{Familiar Quantum Algorithms and Software}
+During my course on Quantum Information \& Computation, I gained knowledge on several quantum algorithms such as Variational Quantum Eigensolver (VQE), Grover's Algorithm, and Shor's Algorithm. I like Shor's algorithm because it can efficiently factor large numbers, which has significant implications for cryptography and information security[3]. This algorithm relies on two key components: the quantum Fourier transform and modular exponentiation. The quantum Fourier transform enables efficient period-finding while modular exponentiation is used to efficiently compute the period of a function, which is a key step in factoring numbers.
+
+In terms of quantum software, I have utilized both Cirq and PennyLane for the given tasks. In addition, I have previously participated in the QML QHack challenge, which has provided me with a certain level of familiarity with PennyLane. I found the tutorials provided by PennyLane to be extremely helpful in developing my understanding of various quantum topics.
+
+\section{References}
+1. 
+\href{https://qiskit.org/documentation/machine-learning/tutorials/03_quantum_kernel.html}{Quantum Kernel Machine Learning.}
+\\
+2. 
+\href{https://arxiv.org/abs/2210.16823}{Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry.}
+\\
+3.
+\href{https://www.academia.edu/77334349/An_overview_of_Quantum_Cryptography_and_Shor_s_Algorithm}{An overview of Quantum Cryptography and Shor’s Algorithm.}
+
+\end{document}
